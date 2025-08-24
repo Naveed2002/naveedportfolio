@@ -1,0 +1,19 @@
+/* Dark Theme (default) */
+.dark-theme {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --accent: #2a9d8f;
+  --border: #333;
+}
+
+/* Light Theme */
+.light-theme {
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --accent: #2a9d8f;
+  --border: #ddd;
+}

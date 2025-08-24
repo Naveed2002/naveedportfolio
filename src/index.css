@@ -1,13 +1,23 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Orbit animation */
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(6rem) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(6rem) rotate(-360deg); }
+}
+.orbit {
+  animation: orbit 6s linear infinite;
+}
+body, html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  text-align: center;
 }
+
+/* your existing styles here */
